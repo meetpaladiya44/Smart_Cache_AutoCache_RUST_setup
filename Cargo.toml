@@ -1,0 +1,25 @@
+[package]
+name = "stylus-cache-sdk"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust SDK for Stylus contract caching utilities with AutoCacheOptIn event support"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/meetpaladiya44/Smart_Cache_AutoCache_RUST_setup/tree/master"
+documentation = "https://docs.rs/stylus-cache-sdk"
+homepage = "https://github.com/meetpaladiya44/Smart_Cache_AutoCache_RUST_setup/tree/master"
+readme = "README.md"
+keywords = ["stylus", "arbitrum", "ethereum", "smart-contracts", "cache"]
+categories = ["cryptography::cryptocurrencies", "development-tools"]
+authors = ["Your Name <your.email@example.com>"]
+
+[dependencies]
+stylus-sdk = "0.4.2"
+alloy-primitives = "0.7.0"
+alloy-sol-types = "0.7.0"
+
+[features]
+default = []
+export-abi = ["stylus-sdk/export-abi"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
